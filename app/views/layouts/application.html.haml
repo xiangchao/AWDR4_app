@@ -12,9 +12,11 @@
       = @page_title || "Pragmatic Bookshelf"
     #columns
       #side
+        - if @cart
+          = hidden_div_if(@cart.line_items.empty?, :id => 'cart') do
+            #cart= render @cart
         %a{:href => '/'} Home
         %br
         %a{:href => '/faq.html'} FAQ
         
-      #main
-        = yield
+      #main= yield

@@ -1,0 +1,9 @@
+.cart_title Your Pragmatic Cart
+%table
+  = render(cart.line_items)
+      
+  %tr.total_line
+    %td{:colspan => 2} Total
+    %td.total_cell= number_to_currency(cart.total_price, :unit => '&pound;')
+      
+= button_to 'Empty cart', cart, :method => :delete, :confirm => 'Are you sure?'

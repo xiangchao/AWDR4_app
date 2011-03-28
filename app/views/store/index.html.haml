@@ -10,5 +10,5 @@
     = sanitize product.description
     .price_line
       %span.price= number_to_currency(product.price, :unit => '&pound;')
-      = button_to 'Add to Cart', line_items_path(:product_id => product)
+      = button_to 'Add to Cart', line_items_path(:product_id => product), :remote => true
 
