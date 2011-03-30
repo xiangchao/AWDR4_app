@@ -1,0 +1,4 @@
+%h3= "People Who Bought #{@product.title}"
+%ul
+  - for order in @product.orders
+    %li= mail_to order.email, order.name
