@@ -24,6 +24,7 @@ gem 'haml'
 # gem 'sqlite3-ruby', :require => 'sqlite3'
 # gem 'aws-s3', :require => 'aws/s3'
 
+# multiple page show orders
 gem 'will_paginate', '>= 3.0.pre'
 
 # Bundle gems for the local environment. Make sure to

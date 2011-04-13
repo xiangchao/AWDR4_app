@@ -8,16 +8,20 @@
     = csrf_meta_tag  
   %body#store
     #banner
+      = form_tag store_path, :class => 'locale' do
+        = select_tag 'set_locale', options_for_select(LANGUAGES, I18n.locale.to_s), :onchange => 'this.form.submit()'
+        -#= submit_tag 'submit'
+        = javascript_tag "$$('.locale input').each(Element.hide)"
       = image_tag('logo.png')
-      = @page_title || "Pragmatic Bookshelf"
+      = @page_title || t('.title')
     #columns
       #side
         - if @cart
           = hidden_div_if(@cart.line_items.empty?, :id => 'cart') do
             #cart= render @cart
-        %a{:href => '/'} Home
+        %a{:href => '/'}= t('.home')
         %br
-        %a{:href => '/faq.html'} FAQ
+        %a{:href => '/faq.html'}= t('.questions')
         %br
         %br
         - if session[:user_id]
