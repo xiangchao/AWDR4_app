@@ -6,6 +6,9 @@
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
 # encoding: utf-8
+# if(User.authenticate('admin','admin') == nil)
+
+User.create(:name => 'admin', :password => 'admin', :password_confirmation => 'admin')
 Product.delete_all
 Product.create(:title => 'Web Design for Developers',
   :description => 
