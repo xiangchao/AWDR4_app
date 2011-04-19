@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<title>File: README_FOR_APP [Rails Application Documentation]</title>
+
+	<link type="text/css" media="screen" href="../rdoc.css" rel="stylesheet" />
+
+	<script src="../js/jquery.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/thickbox-compressed.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/quicksearch.js" type="text/javascript"
+		charset="utf-8"></script>
+	<script src="../js/darkfish.js" type="text/javascript"
+		charset="utf-8"></script>
+</head>
+
+<body class="file">
+	<div id="metadata">
+		<div id="home-metadata">
+			<div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#classes">Classes</a>
+          <a href="../index.html#methods">Methods</a>
+        </h3>
+			</div>
+		</div>
+
+		<div id="project-metadata">
+			
+			
+			<div id="fileindex-section" class="section project-section">
+				<h3 class="section-header">Files</h3>
+				<ul>
+				
+					<li class="file"><a href="../doc/README_FOR_APP.html">README_FOR_APP</a></li>
+				
+				</ul>
+			</div>
+			
+
+			<div id="classindex-section" class="section project-section">
+				<h3 class="section-header">Class Index
+					<span class="search-toggle"><img src="../images/find.png"
+						height="16" width="16" alt="[+]"
+						title="show/hide quicksearch" /></span></h3>
+				<form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+				<fieldset>
+					<legend>Quicksearch</legend>
+					<input type="text" name="quicksearch" value=""
+						class="quicksearch-field" />
+				</fieldset>
+				</form>
+
+				<ul class="link-list">
+				
+					<li><a href="../AdminController.html">AdminController</a></li>
+				
+					<li><a href="../AdminHelper.html">AdminHelper</a></li>
+				
+					<li><a href="../ApplicationController.html">ApplicationController</a></li>
+				
+					<li><a href="../ApplicationHelper.html">ApplicationHelper</a></li>
+				
+					<li><a href="../Cart.html">Cart</a></li>
+				
+					<li><a href="../CartsController.html">CartsController</a></li>
+				
+					<li><a href="../CartsHelper.html">CartsHelper</a></li>
+				
+					<li><a href="../LineItem.html">LineItem</a></li>
+				
+					<li><a href="../LineItemsController.html">LineItemsController</a></li>
+				
+					<li><a href="../LineItemsHelper.html">LineItemsHelper</a></li>
+				
+					<li><a href="../Notifier.html">Notifier</a></li>
+				
+					<li><a href="../Order.html">Order</a></li>
+				
+					<li><a href="../OrdersController.html">OrdersController</a></li>
+				
+					<li><a href="../OrdersHelper.html">OrdersHelper</a></li>
+				
+					<li><a href="../Product.html">Product</a></li>
+				
+					<li><a href="../ProductsController.html">ProductsController</a></li>
+				
+					<li><a href="../ProductsHelper.html">ProductsHelper</a></li>
+				
+					<li><a href="../SessionsController.html">SessionsController</a></li>
+				
+					<li><a href="../SessionsHelper.html">SessionsHelper</a></li>
+				
+					<li><a href="../StoreController.html">StoreController</a></li>
+				
+					<li><a href="../StoreHelper.html">StoreHelper</a></li>
+				
+					<li><a href="../User.html">User</a></li>
+				
+					<li><a href="../UsersController.html">UsersController</a></li>
+				
+					<li><a href="../UsersHelper.html">UsersHelper</a></li>
+				
+				</ul>
+				<div id="no-class-search-results" style="display: none;">No matching classes.</div>
+			</div>
+
+			
+		</div>
+	</div>
+
+	<div id="documentation">
+		<h1>The Depot Online Store</h1>
+<pre>
+ 
+</pre>
+<p>
+This application implements an online store, with a catalog, cart, and
+orders.
+</p>
+<pre>
+ 
+</pre>
+<p>
+It is divided into two main sections:
+</p>
+<pre>
+ 
+</pre>
+<ul>
+<li><p>
+The buyer&#8217;s side of the application manages the catalog, cart, 
+</p>
+<p>
+and checkout. It is implementation spans in four models and associated
+</p>
+<p>
+controllers and views: <a href="../Cart.html">Cart</a>, <a
+href="../LineItem.html">LineItem</a>, <a href="../Order.html">Order</a>,
+and <a href="../Product.html">Product</a>.  Additionally,
+</p>
+<p>
+there is a <a href="../StoreController.html">StoreController</a> for the
+store front itself, and a
+</p>
+<p>
+<a href="../SessionsController.html">SessionsController</a> to manage
+sessions.
+</p>
+</li>
+</ul>
+<pre>
+ 
+</pre>
+<ul>
+<li><p>
+Only administrators can access stuff in the seller&#8217;s side
+</p>
+<p>
+(product maintenance and order fulfillment).  This is implemented by the
+</p>
+<p>
+LoginController, is enforced by the <a
+href="../ApplicationController.html#method-i-authorize">ApplicationController#authorize</a>
+</p>
+<p>
+method, and assisted by the Users and Carts resources.
+</p>
+</li>
+</ul>
+<pre>
+ 
+</pre>
+<p>
+This code was produced as an example for the book {Agile Web Development
+with
+</p>
+<p>
+<a
+href="http://www.pragprog.com/titles/rails4/agile-web-development-with-rails-4th-edition">Rails}</a>.
+It should not be 
+</p>
+<p>
+run as a real online store.
+</p>
+
+	</div>
+
+	<div id="validator-badges">
+		<p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+		<p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+			Rdoc Generator</a> 1.1.6</small>.</p>
+	</div>
+</body>
+</html>
+

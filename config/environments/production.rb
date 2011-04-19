@@ -46,4 +46,7 @@ Depot::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
+  
+  require 'active_support/core_ext/numeric/bytes'
+  config.logger = Logger.new(paths.log.first, 2, 10.kilobytes)
 end
