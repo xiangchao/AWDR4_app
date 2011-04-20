@@ -26,12 +26,12 @@ set :use_sudo, false
 
 # If you are using Passenger mod_rails uncomment this:
 namespace :deploy do
-  desc "create asset packages for production"
-  task :after_update_code, :roles => [:web] do
-    run <<-EOF
-      cd #{release_path} && rake asset:packager:build_all
-    EOF
-  end
+  # desc "create asset packages for production"
+  # task :after_update_code, :roles => [:web] do
+  #   run <<-EOF
+  #     cd #{release_path} && rake asset:packager:build_all
+  #   EOF
+  # end
   
   desc "cause Passenger to initiate a restart"
   task :restart do
