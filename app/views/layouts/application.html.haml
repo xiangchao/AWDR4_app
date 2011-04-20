@@ -4,8 +4,10 @@
     %title Pragprog Books Online Store
     = stylesheet_link_tag 'scaffold'
     = stylesheet_link_tag 'depot', :media => 'all'
+    = stylesheet_link_tag 'redmond/jquery-ui-1.8.11.redmond', :media => 'all'
     = javascript_include_tag :defaults  
     = csrf_meta_tag  
+    = javascript_tag "$(function(){$('#datepicker').datepicker();})"
   %body#store
     #banner
       = form_tag store_path, :class => 'locale' do
@@ -21,7 +23,7 @@
             #cart= render @cart
         %a{:href => '/'}= t('.home')
         %br
-        %input#date{:name => 'date', :type => 'text'}
+        %input#datepicker{:name => 'date', :type => 'text'}
         %br
         %a{:href => '/faq.html'}= t('.questions')
         %br
