@@ -1,11 +1,13 @@
 --- 
 javascripts: 
 - base: 
+  - rails
+  - application
   - jquery
   - jquery-ui
-  - application
-  - rails
+  - jquery.ui.datepicker-zh-CN
 stylesheets: 
 - base: 
-  - scaffold
   - depot
+  - scaffold
+  - jquery-ui-1.8.11.redmond

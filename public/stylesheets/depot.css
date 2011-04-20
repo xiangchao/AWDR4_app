@@ -6,7 +6,7 @@
         padding: 1em;
         margin-bottom: 2em;
         background-color: #f0f0f0;
-        font: bold smaller sans-serif;
+        font: bold sans-serif;
 }
 
 
@@ -57,11 +57,11 @@
 }
 
 #product_list .list_line_even {
-  background:   #e0f8f8;
+  background:   #fff;
 }
 
 #product_list .list_line_odd {
-  background:   #f8b0f8;
+  background:   #dfeffc;
 }
 
 /* An entry in the store catalog */
@@ -114,12 +114,12 @@
 /* Styles for main page */
 
 #banner {
-  background: #9c9;
+  background: #dfeffc;
   padding-top: 10px;
   padding-bottom: 10px;
   border-bottom: 2px solid;
   font: small-caps 40px/40px "Times New Roman", serif;
-  color: #282;
+  color: #2e6e9e;
   text-align: center;
 }
 
@@ -128,11 +128,11 @@
 }
 
 #columns{
-  background: #141;
+  background: #2e6e9e;
 }
 
 #main{
-  margin-left: 17em;
+  margin-left: 21em;
   padding-top: 4ex;
   padding-left: 2em;
   background: white;
@@ -141,12 +141,12 @@
 #side{
   float: left;
   padding: 1em 0 1em 1em;
-  width: 16em;
-  background: #141;
+  width: 20em;
+  background: #2e6e9e;
 }
 
 #side a{
-  color: #bfb;
+  color: #fff;
   font-size: small;
 }
 
