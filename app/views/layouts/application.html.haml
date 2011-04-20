@@ -11,7 +11,7 @@
       = form_tag store_path, :class => 'locale' do
         = select_tag 'set_locale', options_for_select(LANGUAGES, I18n.locale.to_s), :onchange => 'this.form.submit()'
         -#= submit_tag 'submit'
-        = javascript_tag "$$('.locale input').each(Element.hide)"
+        = javascript_tag "$('.locale input').hide()"
       = image_tag('logo.png')
       = @page_title || t('.title')
     #columns
@@ -20,6 +20,8 @@
           = hidden_div_if(@cart.line_items.empty?, :id => 'cart') do
             #cart= render @cart
         %a{:href => '/'}= t('.home')
+        %br
+        %input#date{:name => 'date', :type => 'text'}
         %br
         %a{:href => '/faq.html'}= t('.questions')
         %br

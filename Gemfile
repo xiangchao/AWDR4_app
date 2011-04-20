@@ -6,7 +6,7 @@ gem 'rails', '3.0.5'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-gem 'haml'
+gem 'haml', '~> 3.0.25'
 
 group :production do
   gem 'mysql2'
@@ -30,6 +30,9 @@ gem 'capistrano'
 
 # multiple page show orders
 gem 'will_paginate', '>= 3.0.pre'
+gem 'activemerchant', '~> 1.11.0'
+# rails generate jquery:install --ui --force
+gem 'jquery-rails', '~> 0.2.7'
 
 # Bundle gems for the local environment. Make sure to
 # put test-only gems in this group so their generators
