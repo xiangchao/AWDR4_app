@@ -1,10 +1,10 @@
-set :user, 'jackx'
-set :domain, 'localhost'
-set :application, "depot"
+set :user, 'chao'
+set :domain, 'pgsql'
+set :application, "app"
 
 # file paths
 set :repository,  "#{user}@#{domain}:git/#{application}.git"
-set :deploy_to, "/Users/#{user}/Sites/#{domain}"
+set :deploy_to, "/usr/#{user}/ror"
 
 # set :scm, :subversion
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
