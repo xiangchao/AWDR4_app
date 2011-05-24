@@ -4,7 +4,7 @@ set :application, "app"
 
 # file paths
 set :repository,  "#{user}@#{domain}:git/#{application}.git"
-set :deploy_to, "/usr/#{user}/ror"
+set :deploy_to, "/home/#{user}/ror"
 
 # set :scm, :subversion
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
